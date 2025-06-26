@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    font-size: 2rem;
+}
+
+.happy {
+    background-color:plum;
+    color: #333;
+    width: 35vw;
+    height: 25vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    
+}
+
+.lolol{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+.lolol a {
+    
+    color: #333;
+    text-decoration: none;
+}
+
+.lol div:hover {
+    background-color: #333;
+    color:plum;
+    transition: all 0.3s;
+}
+
+.lol div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 10vw;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: plum;
+    color: #333;
+    transition: all 0.3s;
+}
+

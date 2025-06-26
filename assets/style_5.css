@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    font-size: 3rem;
+    background-color: #333;
+    color: crimson;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ew {
+    font-size: 20rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+div{
+    margin: 3rem;
+    font-size: 3rem;
+    background-color: #333;
+    color:crimson;
+    padding: 1rem;
+    border: 2px solid crimson;
+    transition:background-color 0.2s, color 0.2s ;
+}
+
+div:hover {
+    background-color: crimson;
+    color: #333;
+    transition: background-color 0.2s, color 0.2s;
+}

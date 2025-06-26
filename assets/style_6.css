@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(cornsilk, crimson);
+    font-size: 2rem;
+}
+
+.yes {
+    background-image:radial-gradient(bisque, papayawhip);
+    color:crimson;
+    width: 35vw;
+    height: 25vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    
+}
+
+.yay{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+.yes a {
+    text-decoration: none;
+}
+
+.yay div:hover {
+    background-color: crimson;
+    color:papayawhip;
+    transition: all 0.3s;
+}
+
+.yay div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 10vw;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: papayawhip;
+    color: crimson;
+    transition: all 0.3s;
+}

@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --BGCOLOR : #333;
+    --ALT-BGCOLOR : papayawhip;
+    --FS : 1.5rem;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    font-size: var(--FS);
+    background-color: var(--BGCOLOR);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: mistyrose;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.square {
+    display: inline-flex;
+    flex-shrink: 0; 
+    width: 150px;
+    height: 150px;
+    font-size: 5rem;
+    border: 4px solid var(--ALT-BGCOLOR);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    background-color: var(--BGCOLOR);
+    
+}
+
+.square {
+    text-decoration: none;
+}
+
+.square:hover{
+    transition: background-color 0.3s ;
+    background-color: mistyrose;
+}
+
+.hehe{
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.square:hover + .hehe {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+
+/* .box:nth-child(2){
+    translate: -5px;
+} */
+
+
+@keyframes slide {
+    100% {
+        background-color: mistyrose;
+    }
+
+}
+
+header, footer {
+    background-color: var(--ALT-BGCOLOR);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: sticky;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}

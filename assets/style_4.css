@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    background-image: radial-gradient(goldenrod, whitesmoke);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main {
+    font-size: 7rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+div {
+    border: 2px solid #333;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 20px;
+    background-image: radial-gradient(goldenrod, whitesmoke);
+    transition: background-image 1s;
+}
+
+div:hover {
+    background-image: radial-gradient(lightslategray, slategray);
+    transition: all 1s;
+}
